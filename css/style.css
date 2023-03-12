@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+  background: var(--Dark-Blue);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fill-available;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px;
+}
+main .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .box .adviceContainer {
+  display: flex;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+main .box .adviceContainer p {
+  color: var(--Neon-Green);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+main .box .adviceContainer p:first-child {
+  letter-spacing: 3px;
+  margin-right: 5px;
+}
+main .box .quote {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+main .box .quote p {
+  font-size: 28px;
+  color: var(--Light-Cyan);
+  text-align: center;
+  font-weight: 800;
+}
+main .box .divider {
+  margin-bottom: 25px;
+}
+main .box .dice {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Neon-Green);
+  margin-bottom: -40px;
+}
+main .box .dice svg {
+  transform: scale(1.2);
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 45%;
+  }
+  main .box .quote {
+    width: 80%;
+  }
+  main .box .adviceContainer p {
+    font-size: 16px;
+  }
+  main .dice {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  main .dice:hover {
+    box-shadow: rgb(82, 255, 168) 0px 0px 28px 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
